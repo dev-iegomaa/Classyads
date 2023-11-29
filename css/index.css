@@ -1,0 +1,354 @@
+/* Start Navbar Style */
+
+nav .container ul li:first-of-type a {
+    color: var(--primary-color);
+}
+
+/* End Navbar Style */
+
+/* Start Banner Style */
+
+#banner {
+    background: rgba(0 0 0 / 30%) url('../images/hero_2.jpg');
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 100vh;
+}
+
+#banner h1 {
+    font-size: 3rem;
+    font-weight: var(--font-weight-normal);
+    color: var(--white-color);
+}
+
+#banner p {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#banner form {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px 0;
+    border-radius: calc(var(--border-radius) + .1875rem);
+    -webkit-border-radius: calc(var(--border-radius) + .1875rem);
+    -moz-border-radius: calc(var(--border-radius) + .1875rem);
+    -ms-border-radius: calc(var(--border-radius) + .1875rem);
+    -o-border-radius: calc(var(--border-radius) + .1875rem);
+    margin-top: 30px;
+}
+
+#banner form input,
+#banner form datalist {
+    height: 43px;
+    padding: 0 13px;
+    margin-right: 30px;
+    border-radius: var(--border-radius);
+}
+
+#banner form input:first-of-type {
+    width: 30%;
+}
+
+#banner form input:first-of-type::after {
+    content: '';
+}
+
+#banner form input:nth-of-type(2) {
+    width: 25%;
+    position: relative;
+}
+
+#banner form button {
+    width: 12%;
+    background-color: var(--primary-color);
+    transition: background-color .5s;
+    -webkit-transition: background-color .5s;
+    -moz-transition: background-color .5s;
+    -ms-transition: background-color .5s;
+    -o-transition: background-color .5s;
+}
+
+#banner form button:hover {
+    background-color: #1cd1b7;
+}
+
+/* End Banner Style */
+
+/* Start Featured Style */
+
+#featured {
+    background-color: var(--section-bg-color);
+    padding: 9em 0 5em;
+    position: relative;
+}
+
+#featured .services {
+    background-color: var(--white-color);
+    width: 1140px;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+}
+
+#featured .services article {
+    cursor: pointer;
+    background-color: var(--white-color);
+    width: calc(100% / 6);
+    padding: 30px 10px;
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+    transition-property: background-color, top;
+    transition-duration: .5s;
+    top: 0;
+}
+
+#featured .services article:hover {
+    background-color: var(--primary-color);
+    position: relative;
+    top: -12px;
+}
+
+#featured .services article i {
+    font-size: 30px;
+    color: var(--primary-color);
+    transition: color .5s;
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -ms-transition: color .5s;
+    -o-transition: color .5s;
+}
+
+#featured .services article:hover i {
+    color: var(--white-color);
+}
+
+#featured .services article p {
+    margin: 15px 0 10px;
+}
+
+#featured .services article span {
+    background-color: #e9ecef;
+    color: var(--dark-color);
+    margin-bottom: 10px;
+    transition-property: background-color, color;
+    transition-duration: .5s;
+}
+
+#featured .services article:hover span {
+    background-color: #1bc5ad;
+    color: var(--white-color);
+}
+
+#featured .container > header::after {
+    left: 0;
+}
+
+#featured section article {
+    background-color: var(--white-color);
+    box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.1);
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+    width: 24%;
+}
+
+#featured section article img {
+    border-top-right-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
+}
+
+#featured section article div {
+    padding: 20px;
+}
+
+#featured section article div section span {
+    margin-bottom: 10px;
+    background-color: #e9ecef;
+    color: var(--dark-color);
+}
+
+#featured section article div span {
+    color: var(--third-color);
+    font-size: 13px;
+}
+
+#featured section article div section i:hover {
+    color: var(--dark-color);
+}
+
+#featured section article div p {
+    color: var(--primary-color);
+}
+
+#featured section article div address {
+    margin: 0.3rem 0 0.7rem;
+}
+
+#featured section article div ul {
+    display: inline-flex;
+}
+
+#featured section article div ul li:not(:last-of-type) {
+    color: #f89d13;
+}
+
+#featured section article div ul li:last-of-type {
+    color: #6c757d;
+}
+
+/* End Featured Style */
+
+/* Start Popular Products Style */
+
+#popular-products {
+    padding: var(--section-padding);
+}
+
+#popular-products section {
+    flex-wrap: wrap;
+}
+
+#popular-products article {
+    position: relative;
+    width: 32%;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+}
+
+#popular-products article:first-of-type,
+#popular-products article:nth-of-type(2),
+#popular-products article:nth-of-type(3) {
+    width: 32%;
+    margin-bottom: 24px;
+}
+
+#popular-products article:nth-of-type(4),
+#popular-products article:last-of-type {
+    width: 49%;
+}
+
+#popular-products article:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+#popular-products article img {
+    display: block;
+    transition: transform .5s;
+    -webkit-transition: transform .5s;
+    -moz-transition: transform .5s;
+    -ms-transition: transform .5s;
+    -o-transition: transform .5s;
+}
+
+#popular-products article .overlay {
+    text-align: initial;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#popular-products article .overlay span {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    margin-bottom: 10px;
+}
+
+#popular-products article .overlay footer div p {
+    color: var(--white-color);
+}
+
+#popular-products article .overlay footer div address {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#popular-products article .overlay footer i:hover {
+    color: var(--primary-color);
+}
+
+/* End Popular Products Style */
+
+/* Start Blog Style */
+
+#blog {
+    background-color: var(--section-bg-color);
+    padding: var(--section-padding);
+}
+
+#blog section article {
+    width: 32%;
+    text-align: initial;
+}
+
+#blog section article img {
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+}
+
+#blog section article h3 {
+    font-weight: var(--font-weight-light);
+}
+
+#blog section article address {
+    display: inline-block;
+    margin: .5rem 0 1rem;
+}
+
+#blog section article span:first-of-type,
+#blog section article address {
+    color: #b3b3b3;
+}
+
+#blog section article span {
+    font-size: 13px;
+    color: var(--primary-color);
+}
+
+#blog section article p {
+    color: var(--third-color);
+}
+
+#blog button {
+    margin-top: 40px;
+    font-size: 15px;
+    padding: 12px 27px;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    transition: background-color .5s;
+    -webkit-transition: background-color .5s;
+    -moz-transition: background-color .5s;
+    -ms-transition: background-color .5s;
+    -o-transition: background-color .5s;
+}
+
+#blog button:hover {
+    background-color: #1cd1b7;
+}
+
+/* End Blog Style */

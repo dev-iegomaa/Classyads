@@ -1,0 +1,119 @@
+/* Start Navbar Style */
+
+nav {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    color: var(--dark-color);
+    padding: 20px;
+    background-color: var(--white-color);
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+    transition-property: position, top, width;
+    transition-duration: .5s;
+}
+
+nav .container > a {
+    font-size: 25px;
+    font-weight: var(--font-weight-bold);
+    transition: color .5s;
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -ms-transition: color .5s;
+    -o-transition: color .5s;
+}
+
+nav .container > a:hover {
+    color: var(--primary-color);
+}
+
+nav .container a span {
+    color: var(--primary-color);
+}
+
+nav .container ul {
+    width: 55%;
+}
+
+nav .container ul li a:hover {
+    color: var(--primary-color);
+}
+
+nav .container ul li:nth-of-type(3) {
+    position: relative;
+}
+
+nav .container ul li:nth-of-type(3) i {
+    font-size: 12px;
+    margin-left: 3px;
+}
+
+nav .container ul li:nth-of-type(3) ul {
+    position: absolute;
+    top: 50px;
+    background-color: var(--white-color);
+    width: 195px;
+    opacity: 0;
+    visibility: hidden;
+    transition-property: top, opacity, visibility;
+    border-top: 2px solid var(--primary-color);
+    box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #edf0f5;
+    margin-top: 20px;
+    margin-left: 0px;
+    transition-duration: .3s;
+}
+
+nav .container ul li:nth-of-type(3) ul li {
+    padding: 9px 20px;
+    cursor: pointer;
+    color: #343a40;
+}
+
+nav .container ul li:nth-of-type(3) ul li:hover {
+    background-color: #f4f5f9;
+}
+
+nav .container ul li:nth-of-type(3):hover ul {
+    opacity: 1;
+    visibility: visible;
+    top: 15px;
+}
+
+nav .container > ul > li:nth-of-type(5) {
+    padding-right: 25px;
+    border-right: 1px solid #dee2e6;
+}
+
+nav .container ul li a {
+    font-size: 15px;
+    transition: color .5s;
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -ms-transition: color .5s;
+    -o-transition: color .5s;
+}
+
+nav .container ul li button {
+    background: var(--primary-color);
+    color: var(--white-color);
+    transition: background-color .5s;
+    -webkit-transition: background-color .5s;
+    -moz-transition: background-color .5s;
+    -ms-transition: background-color .5s;
+    -o-transition: background-color .5s;
+}
+
+nav .container ul li button:hover {
+    background-color: var(--dark-color);
+}
+
+/* End Navbar Style */

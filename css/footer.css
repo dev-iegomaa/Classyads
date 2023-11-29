@@ -1,0 +1,158 @@
+/* Start Newsletter Style */
+
+#newsletter {
+    background-color: var(--primary-color);
+    padding: 50px 0;
+}
+
+#newsletter h4 {
+    color: var(--white-color);
+    margin-bottom: 0.5rem;
+}
+
+#newsletter p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#newsletter form {
+    width: 45%;
+}
+
+#newsletter form input {
+    width: 100%;
+    border-bottom: 1px solid var(--white-color);
+    background: transparent;
+    color: var(--dark-color);
+}
+
+#newsletter form input::placeholder {
+    color: var(--white-color);
+    font-weight: var(--font-weight-light);
+    font-style: italic;
+}
+
+#newsletter form button {
+    background-color: #F0F0F0;
+    color: var(--dark-color);
+    transition-property: color, background-color;
+    transition-duration: .5s;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+#newsletter form button:hover {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+
+/* End Newsletter Style */
+
+/* Start Footer Style */
+
+#footer {
+    padding: var(--section-padding);
+    background-color: #333333;
+}
+
+#footer .container section article:first-of-type {
+    width: 35%;
+}
+
+#footer .container section article h4 {
+    color: var(--white-color);
+}
+
+#footer .container section article p,
+#footer .container section article ul,
+#footer .container section article > i {
+    margin-top: 24px;
+}
+
+#footer .container section article p,
+#footer .container section article ul,
+#footer .container section article > i,
+#footer .container p {
+    color: var(--secondary-color);
+}
+
+#footer .container section article ul li:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+
+#footer .container section article ul li {
+    cursor: pointer;
+    transition: color .5s;
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -ms-transition: color .5s;
+    -o-transition: color .5s;
+}
+
+#footer .container section article ul li:hover,
+#footer .container section article > i:hover {
+    color: var(--white-color);
+}
+
+#footer .container section article > i {
+    color: #999;
+    cursor: pointer;
+    transition: color .5s;
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -ms-transition: color .5s;
+    -o-transition: color .5s;
+}
+
+#footer .container section article > i:first-of-type {
+    padding-right: 1rem;
+}
+
+#footer .container section article > i:last-of-type {
+    padding-left: 1rem;
+}
+
+#footer .container section article > i:not(:first-of-type,:last-of-type) {
+    padding: 0 1rem;
+}
+
+#footer .container section article form input {
+    background-color: transparent;
+    border: 1px solid #6c757d;
+    padding: 0 10px;
+    caret-color: var(--white-color);
+    color: var(--white-color);
+}
+
+#footer .container section article form button {
+    background-color: var(--primary-color);
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+#footer .container hr {
+    background: var(--secondary-color);
+    margin: 96px 0 48px;
+    height: 0.07px;
+    border: 0;
+}
+
+#footer .container span {
+    cursor: pointer;
+    transition: color .5s;
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -ms-transition: color .5s;
+    -o-transition: color .5s;
+}
+
+#footer .container span:hover {
+    color: var(--white-color);
+}
+
+/* End Footer Style */

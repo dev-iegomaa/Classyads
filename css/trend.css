@@ -1,0 +1,76 @@
+/* Start Trending Today Section */
+
+#trending-today {
+    background-color: var(--section-bg-color);
+    padding: var(--section-padding);
+    overflow: hidden;
+}
+
+#trending-today .container > header::after {
+    left: 0;
+}
+
+#trending-today section {
+    flex-wrap: wrap;
+}
+
+#trending-today section article {
+    margin-bottom: 25px;
+    background-color: var(--white-color);
+    width: 49%;
+    box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.1);
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+}
+
+#trending-today section article img {
+    width: 40%;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+}
+
+#trending-today section article div {
+    padding: 20px;
+    width: 60%;
+}
+
+#trending-today section article div header span {
+    background-color: #e9ecef;
+    color: var(--dark-color);
+}
+
+#trending-today section article div header i:hover {
+    color: var(--dark-color);
+}
+
+#trending-today section article div p {
+    margin: 20px 0 9px;
+    color: var(--primary-color);
+    font-size: 16px;
+}
+
+#trending-today section article div address {
+    margin-bottom: 1rem;
+}
+
+#trending-today section article div ul {
+    display: inline-flex;
+}
+
+#trending-today section article div > span {
+    color: var(--third-color);
+    font-size: 13px;
+}
+
+#trending-today section article div ul li:not(:last-of-type) {
+    color: #f89d13;
+}
+
+#trending-today section article div ul li:last-of-type {
+    color: #6c757d;
+}
+
+/* End Trending Today Section */

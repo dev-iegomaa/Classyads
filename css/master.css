@@ -1,0 +1,172 @@
+/* Start Main Style */
+
+:root {
+    --white-color: #fff;
+    --dark-color: #000;
+    --primary-color: #30e3ca;
+    --secondary-color: #737373;
+    --third-color: #4d4d4d;
+    --section-bg-color: #f8f9fa;
+    --section-padding: 5em 0;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    --border-radius: .25rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+input,
+button {
+    font-family: 'Kalam', cursive;
+}
+
+h2 {
+    color: rgb(48, 227, 202);
+    font-weight: var(--font-weight-bold);
+    font-size: 2rem;
+}
+
+p {
+    line-height: 25px;
+}
+
+address {
+    font-size: 13px;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+button {
+    background-color: transparent;
+    padding: 12px 20px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+input,
+select,
+button {
+    border: 0;
+    outline: none;
+}
+
+html::-webkit-scrollbar {
+    width: 3px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 3px;
+}
+
+::selection {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+
+::placeholder,
+select {
+    text-transform: capitalize;
+    color: #495057;
+}
+
+span[title="circle"] {
+    display: inline-block;
+    font-size: 11px;
+    padding: 5px 20px;
+    border-radius: 30px;
+    width: fit-content;
+    font-weight: var(--font-weight-bold);
+}
+
+/* End Main Style */
+
+/* Global Sharing Properities */
+
+#featured header,
+#popular-products header,
+#trending-today .container > header,
+#testimonials header,
+#faq header,
+#blog header {
+    position: relative;
+    padding-bottom: 25px;
+    margin-bottom: 48px;
+}
+
+#faq header::after,
+#featured header::after,
+#popular-products header::after,
+#trending-today .container > header::after,
+#testimonials header::after,
+#blog header::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: calc(50% - (80px / 2));
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+#faq header p,
+#featured header p,
+#popular-products header p,
+#blog header p {
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 5px;
+}
+
+#featured section article div section i,
+#trending-today section article div header i {
+    color: var(--primary-color);
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+#featured section article div section i,
+#popular-products article .overlay footer i,
+#trending-today section article div header i {
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    transition: color .5s;
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -ms-transition: color .5s;
+    -o-transition: color .5s;
+}
+
+#popular-products article .overlay footer i {
+    color: var(--white-color);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.owl-carousel .owl-nav button.owl-next span,
+.owl-carousel .owl-nav button.owl-prev span {
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+/* Global Sharing Properities */
